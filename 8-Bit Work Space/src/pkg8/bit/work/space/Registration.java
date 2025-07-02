@@ -7,10 +7,7 @@ package pkg8.bit.work.space;
 import java.util.*;
 import java.io.*;
 import javax.swing.*;
-/**
- *
- * @author Marlon
- */
+
 public class Registration extends javax.swing.JFrame {
     
     ArrayList<Users> users;
@@ -84,10 +81,11 @@ public class Registration extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        Logo = new javax.swing.JLabel();
         lblTitle = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        Logo1 = new javax.swing.JLabel();
+        lblTitle1 = new javax.swing.JLabel();
         btnCreate = new javax.swing.JButton();
-        btnCancel = new javax.swing.JButton();
         lblReenPass = new javax.swing.JLabel();
         lblFirst = new javax.swing.JLabel();
         txtFirst = new javax.swing.JTextField();
@@ -98,120 +96,160 @@ public class Registration extends javax.swing.JFrame {
         txtDesPass = new javax.swing.JPasswordField();
         txtReenPass = new javax.swing.JPasswordField();
         txtDesUser = new javax.swing.JTextField();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator3 = new javax.swing.JSeparator();
+        jSeparator5 = new javax.swing.JSeparator();
+        jSeparator6 = new javax.swing.JSeparator();
+        btnCreate1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Registration");
         setResizable(false);
 
-        jPanel1.setBackground(new java.awt.Color(244, 247, 247));
+        jPanel1.setBackground(new java.awt.Color(233, 245, 243));
+        jPanel1.setFont(new java.awt.Font("Matrix Mono", 3, 12)); // NOI18N
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(48, 48, 72));
 
-        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pkg8/bit/work/space/Logo_8bit.png"))); // NOI18N
+        lblTitle.setBackground(new java.awt.Color(233, 245, 243));
+        lblTitle.setFont(new java.awt.Font("Matrix Mono", 1, 24)); // NOI18N
+        lblTitle.setForeground(new java.awt.Color(233, 245, 243));
+        lblTitle.setText("Registration");
 
-        lblTitle.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lblTitle.setText("Registration Form");
+        jPanel3.setBackground(new java.awt.Color(48, 48, 72));
+
+        Logo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pkg8/bit/work/space/Logo_8bit.png"))); // NOI18N
+
+        lblTitle1.setBackground(new java.awt.Color(233, 245, 243));
+        lblTitle1.setFont(new java.awt.Font("Matrix Mono", 1, 24)); // NOI18N
+        lblTitle1.setForeground(new java.awt.Color(233, 245, 243));
+        lblTitle1.setText("form");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap(52, Short.MAX_VALUE)
+                .addComponent(Logo1, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(143, 143, 143)
+                .addComponent(lblTitle1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(Logo1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addComponent(lblTitle1)
+                .addGap(90, 90, 90))
+        );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(97, Short.MAX_VALUE)
-                .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(72, 72, 72))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(125, 125, 125)
+                .addContainerGap(79, Short.MAX_VALUE)
                 .addComponent(lblTitle)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(44, 44, 44))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 37, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 38, Short.MAX_VALUE)))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(Logo)
-                .addGap(81, 81, 81)
+                .addGap(317, 317, 317)
                 .addComponent(lblTitle)
-                .addContainerGap(105, Short.MAX_VALUE))
+                .addContainerGap(154, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 0, 450, 490));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 480, 500));
 
-        btnCreate.setBackground(new java.awt.Color(244, 247, 247));
-        btnCreate.setForeground(new java.awt.Color(48, 48, 72));
-        btnCreate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Button1.png"))); // NOI18N
-        btnCreate.setText("Create");
+        btnCreate.setBackground(new java.awt.Color(176, 70, 70));
+        btnCreate.setFont(new java.awt.Font("Matrix Mono", 0, 12)); // NOI18N
+        btnCreate.setForeground(new java.awt.Color(244, 247, 247));
+        btnCreate.setText("Cancel");
         btnCreate.setBorder(null);
         btnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreateActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, -1, -1));
-
-        btnCancel.setText("Cancel");
-        btnCancel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCancelActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnCancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 340, -1, -1));
+        jPanel1.add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 110, 30));
 
         lblReenPass.setFont(new java.awt.Font("Pixelify Sans", 1, 12)); // NOI18N
         lblReenPass.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Pass_Icon.png"))); // NOI18N
-        jPanel1.add(lblReenPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 180, 50, 30));
+        jPanel1.add(lblReenPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 180, 50, 30));
 
         lblFirst.setFont(new java.awt.Font("Pixelify Sans", 1, 12)); // NOI18N
         lblFirst.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/User_Icon2.png"))); // NOI18N
-        jPanel1.add(lblFirst, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, -1, 30));
+        jPanel1.add(lblFirst, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, 30));
 
-        txtFirst.setBackground(new java.awt.Color(244, 247, 247));
+        txtFirst.setBackground(new java.awt.Color(233, 245, 243));
+        txtFirst.setText("Enter First Name");
         txtFirst.setBorder(null);
         txtFirst.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFirstActionPerformed(evt);
             }
         });
-        jPanel1.add(txtFirst, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 161, 30));
+        jPanel1.add(txtFirst, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 220, 210, 30));
 
         lblLast.setFont(new java.awt.Font("Pixelify Sans", 1, 12)); // NOI18N
         lblLast.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/User_Icon2.png"))); // NOI18N
-        jPanel1.add(lblLast, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, -1, 30));
+        jPanel1.add(lblLast, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 260, 60, 30));
 
-        txtLast.setBackground(new java.awt.Color(244, 247, 247));
+        txtLast.setBackground(new java.awt.Color(233, 245, 243));
+        txtLast.setForeground(new java.awt.Color(48, 48, 72));
+        txtLast.setText("Enter Last Name");
         txtLast.setBorder(null);
-        jPanel1.add(txtLast, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 161, 30));
+        jPanel1.add(txtLast, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, 210, 30));
 
         lblDesUser.setFont(new java.awt.Font("Pixelify Sans", 1, 12)); // NOI18N
         lblDesUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/User_Icon.png"))); // NOI18N
-        jPanel1.add(lblDesUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 50, 30));
+        jPanel1.add(lblDesUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 50, 30));
 
         lblDesPass.setFont(new java.awt.Font("Pixelify Sans", 1, 12)); // NOI18N
         lblDesPass.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Pass_Icon.png"))); // NOI18N
-        jPanel1.add(lblDesPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, -1, 30));
+        jPanel1.add(lblDesPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, 30));
 
-        txtDesPass.setBackground(new java.awt.Color(244, 247, 247));
-        txtDesPass.setText("          ");
+        txtDesPass.setBackground(new java.awt.Color(233, 245, 243));
+        txtDesPass.setText("password");
         txtDesPass.setBorder(null);
         txtDesPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtDesPassActionPerformed(evt);
             }
         });
-        jPanel1.add(txtDesPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 161, 30));
+        jPanel1.add(txtDesPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 210, 30));
 
-        txtReenPass.setBackground(new java.awt.Color(244, 247, 247));
+        txtReenPass.setBackground(new java.awt.Color(233, 245, 243));
+        txtReenPass.setForeground(new java.awt.Color(48, 48, 72));
+        txtReenPass.setText("password");
         txtReenPass.setBorder(null);
         txtReenPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtReenPassActionPerformed(evt);
             }
         });
-        jPanel1.add(txtReenPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 161, 30));
+        jPanel1.add(txtReenPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 210, 30));
 
         txtDesUser.setEditable(false);
-        txtDesUser.setBackground(new java.awt.Color(244, 247, 247));
+        txtDesUser.setBackground(new java.awt.Color(233, 245, 243));
         txtDesUser.setText("Enter username");
         txtDesUser.setBorder(null);
         txtDesUser.addActionListener(new java.awt.event.ActionListener() {
@@ -219,17 +257,47 @@ public class Registration extends javax.swing.JFrame {
                 txtDesUserActionPerformed(evt);
             }
         });
-        jPanel1.add(txtDesUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 161, 30));
+        jPanel1.add(txtDesUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 210, 30));
+
+        jSeparator1.setForeground(new java.awt.Color(48, 48, 72));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 210, 10));
+
+        jSeparator2.setForeground(new java.awt.Color(48, 48, 72));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 210, 10));
+
+        jSeparator3.setForeground(new java.awt.Color(48, 48, 72));
+        jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 290, 210, 10));
+
+        jSeparator5.setForeground(new java.awt.Color(48, 48, 72));
+        jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 210, 10));
+
+        jSeparator6.setForeground(new java.awt.Color(48, 48, 72));
+        jPanel1.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 210, 10));
+
+        btnCreate1.setBackground(new java.awt.Color(48, 48, 72));
+        btnCreate1.setFont(new java.awt.Font("Matrix Mono", 0, 12)); // NOI18N
+        btnCreate1.setForeground(new java.awt.Color(244, 247, 247));
+        btnCreate1.setText("Create");
+        btnCreate1.setBorder(null);
+        btnCreate1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCreate1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnCreate1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, 110, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -262,12 +330,6 @@ public class Registration extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btnCreateActionPerformed
 
-    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
-        this.dispose();
-        new Login().setVisible(true);
-        
-    }//GEN-LAST:event_btnCancelActionPerformed
-
     private void txtFirstActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFirstActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtFirstActionPerformed
@@ -283,6 +345,10 @@ public class Registration extends javax.swing.JFrame {
     private void txtDesUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDesUserActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDesUserActionPerformed
+
+    private void btnCreate1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreate1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCreate1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -321,17 +387,24 @@ public class Registration extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Logo;
-    private javax.swing.JButton btnCancel;
+    private javax.swing.JLabel Logo1;
     private javax.swing.JButton btnCreate;
+    private javax.swing.JButton btnCreate1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator5;
+    private javax.swing.JSeparator jSeparator6;
     private javax.swing.JLabel lblDesPass;
     private javax.swing.JLabel lblDesUser;
     private javax.swing.JLabel lblFirst;
     private javax.swing.JLabel lblLast;
     private javax.swing.JLabel lblReenPass;
     private javax.swing.JLabel lblTitle;
+    private javax.swing.JLabel lblTitle1;
     private javax.swing.JPasswordField txtDesPass;
     private javax.swing.JTextField txtDesUser;
     private javax.swing.JTextField txtFirst;
