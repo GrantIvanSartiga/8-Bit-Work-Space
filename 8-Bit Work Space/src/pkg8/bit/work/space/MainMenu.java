@@ -484,7 +484,7 @@ public class MainMenu extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("jButton3");
+        jButton3.setText("button");
 
         javax.swing.GroupLayout soloLayout = new javax.swing.GroupLayout(solo);
         solo.setLayout(soloLayout);
