@@ -98,6 +98,7 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel25 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -470,7 +471,6 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel25.setText("Night owl");
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/owl (2).png"))); // NOI18N
-        jButton2.setActionCommand("");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -483,6 +483,8 @@ public class MainMenu extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+
+        jButton3.setText("jButton3");
 
         javax.swing.GroupLayout soloLayout = new javax.swing.GroupLayout(solo);
         solo.setLayout(soloLayout);
@@ -503,7 +505,9 @@ public class MainMenu extends javax.swing.JFrame {
                         .addGap(60, 60, 60)
                         .addComponent(jButton1)
                         .addGap(43, 43, 43)
-                        .addComponent(jButton2)))
+                        .addComponent(jButton2)
+                        .addGap(152, 152, 152)
+                        .addComponent(jButton3)))
                 .addGap(143, 143, 143)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -522,10 +526,15 @@ public class MainMenu extends javax.swing.JFrame {
                             .addComponent(jLabel23)
                             .addComponent(jLabel24)
                             .addComponent(jLabel25))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(soloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton1))))
+                            .addGroup(soloLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(soloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton2)
+                                    .addComponent(jButton1)))
+                            .addGroup(soloLayout.createSequentialGroup()
+                                .addGap(119, 119, 119)
+                                .addComponent(jButton3)))))
                 .addContainerGap(101, Short.MAX_VALUE))
         );
 
@@ -716,6 +725,7 @@ int x = 210;
     private javax.swing.JPanel group;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -748,7 +758,6 @@ int x = 210;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
-    private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
