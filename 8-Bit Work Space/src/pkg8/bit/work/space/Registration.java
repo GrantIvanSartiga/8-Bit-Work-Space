@@ -85,7 +85,7 @@ public class Registration extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         Logo1 = new javax.swing.JLabel();
         lblTitle1 = new javax.swing.JLabel();
-        btnCreate = new javax.swing.JButton();
+        btnCancel = new javax.swing.JButton();
         lblReenPass = new javax.swing.JLabel();
         lblFirst = new javax.swing.JLabel();
         txtFirst = new javax.swing.JTextField();
@@ -101,7 +101,7 @@ public class Registration extends javax.swing.JFrame {
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator5 = new javax.swing.JSeparator();
         jSeparator6 = new javax.swing.JSeparator();
-        btnCreate1 = new javax.swing.JButton();
+        btnCreate = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Registration");
@@ -179,17 +179,17 @@ public class Registration extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 0, 480, 500));
 
-        btnCreate.setBackground(new java.awt.Color(176, 70, 70));
-        btnCreate.setFont(new java.awt.Font("Matrix Mono", 0, 12)); // NOI18N
-        btnCreate.setForeground(new java.awt.Color(244, 247, 247));
-        btnCreate.setText("Cancel");
-        btnCreate.setBorder(null);
-        btnCreate.addActionListener(new java.awt.event.ActionListener() {
+        btnCancel.setBackground(new java.awt.Color(176, 70, 70));
+        btnCancel.setFont(new java.awt.Font("Matrix Mono", 0, 12)); // NOI18N
+        btnCancel.setForeground(new java.awt.Color(244, 247, 247));
+        btnCancel.setText("Cancel");
+        btnCancel.setBorder(null);
+        btnCancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCreateActionPerformed(evt);
+                btnCancelActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 110, 30));
+        jPanel1.add(btnCancel, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 110, 30));
 
         lblReenPass.setFont(new java.awt.Font("Pixelify Sans", 1, 12)); // NOI18N
         lblReenPass.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Icons/Pass_Icon.png"))); // NOI18N
@@ -274,25 +274,24 @@ public class Registration extends javax.swing.JFrame {
         jSeparator6.setForeground(new java.awt.Color(48, 48, 72));
         jPanel1.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, 210, 10));
 
-        btnCreate1.setBackground(new java.awt.Color(48, 48, 72));
-        btnCreate1.setFont(new java.awt.Font("Matrix Mono", 0, 12)); // NOI18N
-        btnCreate1.setForeground(new java.awt.Color(244, 247, 247));
-        btnCreate1.setText("Create");
-        btnCreate1.setBorder(null);
-        btnCreate1.addActionListener(new java.awt.event.ActionListener() {
+        btnCreate.setBackground(new java.awt.Color(48, 48, 72));
+        btnCreate.setFont(new java.awt.Font("Matrix Mono", 0, 12)); // NOI18N
+        btnCreate.setForeground(new java.awt.Color(244, 247, 247));
+        btnCreate.setText("Create");
+        btnCreate.setBorder(null);
+        btnCreate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCreate1ActionPerformed(evt);
+                btnCreateActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCreate1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, 110, 30));
+        jPanel1.add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 330, 110, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 906, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -302,6 +301,27 @@ public class Registration extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelActionPerformed
+        new Login().setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnCancelActionPerformed
+
+    private void txtFirstActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFirstActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtFirstActionPerformed
+
+    private void txtDesPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDesPassActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDesPassActionPerformed
+
+    private void txtReenPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtReenPassActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtReenPassActionPerformed
+
+    private void txtDesUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDesUserActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDesUserActionPerformed
 
     private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed
         String desUser = txtDesUser.getText().trim();
@@ -327,28 +347,7 @@ public class Registration extends javax.swing.JFrame {
                 saveUser();
             }
         }
-        
     }//GEN-LAST:event_btnCreateActionPerformed
-
-    private void txtFirstActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFirstActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtFirstActionPerformed
-
-    private void txtDesPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDesPassActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtDesPassActionPerformed
-
-    private void txtReenPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtReenPassActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtReenPassActionPerformed
-
-    private void txtDesUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDesUserActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtDesUserActionPerformed
-
-    private void btnCreate1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreate1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCreate1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -388,8 +387,8 @@ public class Registration extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Logo1;
+    private javax.swing.JButton btnCancel;
     private javax.swing.JButton btnCreate;
-    private javax.swing.JButton btnCreate1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
