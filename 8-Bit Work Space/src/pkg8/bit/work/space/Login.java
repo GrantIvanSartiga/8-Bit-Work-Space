@@ -216,9 +216,9 @@ public class Login extends javax.swing.JFrame {
         String passConv = new String(pass);
         boolean isFound = false;
         
-        if (user.equals("admin") && passConv.equals("admin")){
+        if (user.equals("admin") && passConv.equals("12345678bitworkspace")){
             this.dispose();
-            new MainMenu().setVisible(true); 
+            new MainMenu1().setVisible(true); 
         }
         else if (user.isEmpty() && passConv.isEmpty()){
             JOptionPane.showMessageDialog(null, "Please enter username and password!", "Error", JOptionPane.ERROR_MESSAGE);

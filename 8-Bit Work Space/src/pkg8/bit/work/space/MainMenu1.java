@@ -104,6 +104,7 @@ public class MainMenu1 extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(37, 37, 75));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setFont(new java.awt.Font("Matrix Mono", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(242, 242, 242));
         jLabel2.setText("MENU");
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -111,7 +112,7 @@ public class MainMenu1 extends javax.swing.JFrame {
                 jLabel2MouseClicked(evt);
             }
         });
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 40, -1));
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(142, 10, -1, -1));
 
         jPanel4.setBackground(new java.awt.Color(37, 37, 75));
         jPanel4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -122,6 +123,7 @@ public class MainMenu1 extends javax.swing.JFrame {
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setBackground(new java.awt.Color(37, 37, 75));
+        jLabel1.setFont(new java.awt.Font("PixelPurl", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Logout");
         jPanel4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 6, 109, 28));
@@ -147,8 +149,10 @@ public class MainMenu1 extends javax.swing.JFrame {
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setBackground(new java.awt.Color(37, 37, 75));
+        jLabel4.setFont(new java.awt.Font("PixelPurl", 0, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Dashboard");
+        jLabel4.setAutoscrolls(true);
         jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 6, 109, 28));
 
         jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 210, 40));
@@ -162,6 +166,7 @@ public class MainMenu1 extends javax.swing.JFrame {
         jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel6.setBackground(new java.awt.Color(37, 37, 75));
+        jLabel6.setFont(new java.awt.Font("PixelPurl", 0, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Bookings");
         jPanel7.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 6, 109, 28));
@@ -187,6 +192,7 @@ public class MainMenu1 extends javax.swing.JFrame {
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel8.setBackground(new java.awt.Color(37, 37, 75));
+        jLabel8.setFont(new java.awt.Font("PixelPurl", 0, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("History");
         jPanel9.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 6, 109, 28));
@@ -203,9 +209,10 @@ public class MainMenu1 extends javax.swing.JFrame {
 
         jPanel2.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 210, 40));
 
+        jLabel19.setFont(new java.awt.Font("Matrix Mono", 0, 12)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("LOGO HERE");
-        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, -1, -1));
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pkg8/bit/work/space/8-Bit Work Space - Logo (1).png"))); // NOI18N
+        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, 190));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 210, 700));
 
@@ -393,7 +400,8 @@ public class MainMenu1 extends javax.swing.JFrame {
 
         jPanel18.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel15.setFont(new java.awt.Font("Helvetica Neue", 0, 20)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Matrix Mono", 0, 24)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(37, 37, 75));
         jLabel15.setText("Dashboard");
 
         javax.swing.GroupLayout jPanel18Layout = new javax.swing.GroupLayout(jPanel18);
@@ -414,6 +422,7 @@ public class MainMenu1 extends javax.swing.JFrame {
         );
 
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jTabbedPane1.setFont(new java.awt.Font("PixelPurl", 0, 18)); // NOI18N
 
         jPanel24.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -448,7 +457,7 @@ public class MainMenu1 extends javax.swing.JFrame {
                 .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(138, 138, 138)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(699, Short.MAX_VALUE))
+                .addContainerGap(687, Short.MAX_VALUE))
         );
         soloLayout.setVerticalGroup(
             soloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -457,7 +466,7 @@ public class MainMenu1 extends javax.swing.JFrame {
                 .addGroup(soloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(229, Short.MAX_VALUE))
+                .addContainerGap(224, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("SOLO", solo);
@@ -466,11 +475,11 @@ public class MainMenu1 extends javax.swing.JFrame {
         group.setLayout(groupLayout);
         groupLayout.setHorizontalGroup(
             groupLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1290, Short.MAX_VALUE)
+            .addGap(0, 1278, Short.MAX_VALUE)
         );
         groupLayout.setVerticalGroup(
             groupLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 579, Short.MAX_VALUE)
+            .addGap(0, 574, Short.MAX_VALUE)
         );
 
         jTabbedPane1.addTab("GROUP", group);
@@ -480,14 +489,17 @@ public class MainMenu1 extends javax.swing.JFrame {
         dashboardLayout.setHorizontalGroup(
             dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1290, Short.MAX_VALUE)
+            .addGroup(dashboardLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1)
+                .addContainerGap())
         );
         dashboardLayout.setVerticalGroup(
             dashboardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dashboardLayout.createSequentialGroup()
                 .addComponent(jPanel18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 614, Short.MAX_VALUE))
+                .addComponent(jTabbedPane1))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
