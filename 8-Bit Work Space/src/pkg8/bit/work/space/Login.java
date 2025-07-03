@@ -76,14 +76,13 @@ public class Login extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Pseudo-Business");
-        setPreferredSize(new java.awt.Dimension(900, 500));
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(233, 245, 243));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtUser.setBackground(new java.awt.Color(233, 245, 243));
-        txtUser.setFont(new java.awt.Font("PixelPurl", 0, 12)); // NOI18N
+        txtUser.setFont(new java.awt.Font("PixelPurl", 0, 20)); // NOI18N
         txtUser.setText("Username");
         txtUser.setBorder(null);
         txtUser.addActionListener(new java.awt.event.ActionListener() {
@@ -118,7 +117,8 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 380, -1, 40));
 
         txtPass.setBackground(new java.awt.Color(233, 245, 243));
-        txtPass.setText("ddddddd");
+        txtPass.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
+        txtPass.setText("password");
         txtPass.setBorder(null);
         txtPass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
